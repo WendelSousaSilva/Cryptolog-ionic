@@ -1,0 +1,35 @@
+ <ion-content padding class="backImage">
+  <div class="logo">
+    <img src="/assets/Imagens/logo_fundo.png" alt="">
+    <span>CryptoLog</span>
+  </div>
+
+
+ 
+  
+  <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+   
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+ 
+
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" formControlName="username"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+  
+  
+    <ion-button expand="full" (click)="register()">Cadastrar</ion-button>
+      
+  </form>
+  <ion-button expand="full" [routerLink]="['/login']" >Retornar para Pagina de Login</ion-button>
+
+
+</ion-content>

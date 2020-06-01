@@ -1,0 +1,8 @@
+{
+  "name": "devdacticAuth",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
